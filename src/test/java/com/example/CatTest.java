@@ -14,6 +14,7 @@ public class CatTest {
     @Mock
     Feline feline;
 
+
     @Test
     public void getSoundOfCatCorrect () {
         Cat cat = new Cat(feline);
@@ -21,6 +22,7 @@ public class CatTest {
         String actualSoundOfCat = cat.getSound();
         assertEquals(expectedSoundOfCat, actualSoundOfCat);
     }
+
 
     @Test
     public void checkFoodCatCorrect () throws Exception {

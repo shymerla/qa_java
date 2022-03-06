@@ -6,9 +6,7 @@ import org.junit.runner.RunWith;
 import org.mockito.Mock;
 import org.mockito.Mockito;
 import org.mockito.junit.MockitoJUnitRunner;
-
 import java.util.List;
-
 import static org.junit.Assert.assertEquals;
 
 @RunWith(MockitoJUnitRunner.class)
@@ -23,6 +21,7 @@ public class LionTest2 {
     public void setUps() throws Exception {
         lion = new Lion("Самец", feline);
     }
+
 
     @Test
     public void getKittensOfLionCorrect() {
