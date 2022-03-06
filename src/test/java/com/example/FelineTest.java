@@ -6,7 +6,6 @@ import static org.junit.Assert.assertEquals;
 
 public class FelineTest {
 
-
     @Test
     public void getFoodOfFelineCorrect () throws Exception {
         Feline feline = new Feline();
@@ -15,7 +14,6 @@ public class FelineTest {
         assertEquals(expectedFoodOfFeline, actualFoodOfFeline);
     }
 
-
     @Test
     public void getFamilyOfFelineCorrect () {
         Feline feline = new Feline();
@@ -23,7 +21,6 @@ public class FelineTest {
         String actualFamilyOfFeline = feline.getFamily();
         assertEquals(expectedFamilyOfFeline, actualFamilyOfFeline);
     }
-
 
     @Test
     public void getKiitensOfFelineCorrect () {

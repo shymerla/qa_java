@@ -22,14 +22,12 @@ public class LionTest2 {
         lion = new Lion("Самец", feline);
     }
 
-
     @Test
     public void getKittensOfLionCorrect() {
         Mockito.when(feline.getKittens()).thenReturn(1);
         int actualKittensOfLion = lion.getKittens();
         int expectedKittensOfLion = 1;
         assertEquals(expectedKittensOfLion, actualKittensOfLion);
-
     }
 
     @Test

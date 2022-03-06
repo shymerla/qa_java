@@ -13,6 +13,7 @@ public class LionTest {
 
     private final String sex;
     private final boolean isHaveMane;
+
     @Mock
     Feline feline;
 
