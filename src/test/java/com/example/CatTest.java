@@ -5,7 +5,9 @@ import org.junit.runner.RunWith;
 import org.mockito.Mock;
 import org.mockito.Mockito;
 import org.mockito.junit.MockitoJUnitRunner;
+
 import java.util.List;
+
 import static org.junit.Assert.assertEquals;
 
 @RunWith(MockitoJUnitRunner.class)
@@ -15,19 +17,19 @@ public class CatTest {
     Feline feline;
 
     @Test
-    public void getSoundOfCatCorrect () {
+    public void getSoundOfCatCorrect() {
         Cat cat = new Cat(feline);
         String expectedSoundOfCat = "Мяу";
         String actualSoundOfCat = cat.getSound();
-        assertEquals(expectedSoundOfCat, actualSoundOfCat);
+        assertEquals("cat.getSound() need help", expectedSoundOfCat, actualSoundOfCat);
     }
 
     @Test
-    public void checkFoodCatCorrect () throws Exception {
+    public void checkFoodCatCorrect() throws Exception {
         Cat cat = new Cat(feline);
         Mockito.when(feline.eatMeat()).thenReturn(List.of("Животные", "Птицы", "Рыба"));
         List<String> actual = cat.getFood();
         List<String> expected = List.of("Животные", "Птицы", "Рыба");
-        assertEquals(expected, actual);
+        assertEquals("cat.getFood() need help", expected, actual);
     }
 }
